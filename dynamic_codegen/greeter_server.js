@@ -19,6 +19,7 @@
 var PROTO_PATH = __dirname + '/../protos/helloworld.proto';
 
 var grpc = require('grpc');
+var consul = require('consul');
 var protoLoader = require('@grpc/proto-loader');
 var packageDefinition = protoLoader.loadSync(
     PROTO_PATH,

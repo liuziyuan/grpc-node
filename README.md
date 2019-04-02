@@ -48,3 +48,8 @@ You can find a more detailed tutorial in [gRPC Basics: Node.js][]
 
 [Install gRPC Node]:../../src/node
 [gRPC Basics: Node.js]:https://grpc.io/docs/tutorials/basic/node.html
+
+
+docker build -t liuziyuan/grpc-node:dev .
+
+docker run -d -p 50051:50051 --name=grpc-node-server liuziyuan/grpc-node:dev
